@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Peter",
+  lastName: "Biodrowicz",
+  name: `Peter Biodrowicz`,
+  role: "Electrical Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "biopeti1208@gmail.com",
+  location: "Europe/Budapest", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Hungarian", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,17 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/b0redcactus",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/p%C3%A9ter-biodrowicz-99b900228//",
   },
   {
     name: "Email",
@@ -98,9 +93,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am an electrical engineer specializing in PV and BESS system design, leading design projects from concept to implementation.
       </>
     ),
   },
@@ -109,41 +102,115 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Solservices",
+        timeframe: "2024.04 - Present",
+        role: "Project Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Leading design works internally
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            PV projects up to 50 MW
+          </>,
+          <>
+            BESS projects up to 30 MVA / 50 MWh
+          </>,
+          <>
+            Permit tracking
+          </>,
+          <>
+            Expanding knowledge of 22 kV / 132 kV substations
+          </>,
+          <>
+            Construction support
+          </>,
+          <>
+            Communicating with technical inspectors and designers
+          </>,
+          <>
+            Internal design tasks such as monitoring system design and cable trench cross-sections
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+         
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+
+
+       {
+        company: "Eslar",
+        timeframe: "2023.10 - 2024.03",
+        role: "Electrical Design Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designing PV power plants up to 5 MW
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            DC, AC cabinet designs
+          </>,
+          <>
+            Single line diagrams
+          </>,
+          <>
+            Monitoring designs
+          </>,
+          <>
+            Protection calculations
+          </>,
+          <>
+            Cable trench cross sections
+          </>,
+          <>
+            Layouts
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+         
+        ],
+      },
+
+ {
+        company: "Phlegon",
+        timeframe: "2022.06 - 2023.10",
+        role: "Electrical Design Engineer",
+        achievements: [
+          <>
+            Designing PV power plants up to 2 MW
+          </>,
+          <>
+            DC, AC cabinet designs
+          </>,
+          <>
+            Single line diagrams
+          </>,
+          <>
+            Layouts
+          </>,
+          <>
+            Working in AutoCAD Electrica
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+         
+        ],
+      },
+
+
+      
+      
+      {
+        company: "Intern jobs",
+        timeframe: "2021.10 - 2022.05",
+        role: "Intern Electrical Engineer",
+        achievements: [
+          <>
+            Writing my BSc thesis on the design of a 22 kV/0.4 kV distribution line
+          </>,
+          <>
+            Learning about electrical building design
           </>,
         ],
         images: [],
@@ -155,12 +222,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Óbuda University",
+        description: <>MSc Electrical Engineer</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Pécs",
+        description: <>BSc Electrical Engineer</>,
       },
     ],
   },
@@ -169,59 +236,42 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "AutoCAD",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>PV and BESS permit and implementation designs</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+         
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        
         ],
       },
       {
-        title: "Next.js",
+        title: "Permit and design management",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Review and follow the permitting and design process</>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          
+        ],
+      },
+      {
+        title: "Construction support",
+        description: (
+          <>Supporting construction team</>
+        ),
+        tags: [
+          
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          
         ],
       },  
     ],
